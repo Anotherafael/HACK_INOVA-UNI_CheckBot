@@ -57,7 +57,7 @@ async def userInput(payload: Payload):
     return {"message": "Pergunta armazenada com sucesso."}
 
 
-@app.get("/getAiResponseToUser")
+@app.post("/getAiResponseToUser")
 async def getAiResponseToUser(data):
     global user_input
     response = openai_chat(profile="primary", user_prompt=user_input, data=str(data))

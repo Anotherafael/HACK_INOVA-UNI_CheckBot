@@ -15,4 +15,4 @@ Portanto, o sistema desenvolvido consiste em aplicar uma Inteligência Artificia
 ``` PROFILE_SECONDARY='Seja simples e direto em suas respostas.``` <br>
 ``` ORGANIZATION=[INSIRA A ORGANIZATION DO OPENAI. EX: org-9FyNfODLsDJn0D8u0L5ac8Gl]``` <br>
 4. Rode o uvicorn: <br>
-``` uvicorn app_test:app --host=0.0.0.0 --port=8002 --workers=1 ``` <br>
+``` uvicorn app:app --host=0.0.0.0 --port=8002 --workers=1 ``` <br>

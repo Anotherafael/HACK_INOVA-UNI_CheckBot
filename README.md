@@ -6,7 +6,7 @@ O Tema deste projeto é: "Sistema mais simples/compreensível de transparência"
 Portanto, o sistema desenvolvido consiste em aplicar uma Inteligência Artificial para simplificar a busca por dados no Portal de Transparência do Estado do Tocantins (Expansível para os municípios).
 
 # Como usar?
-1. Instale o python, preferêncialment a versão 3.
+1. Instale o python, preferencialmente a versão 3.
 2. Instale as dependências do arquivo requirements.txt: <br>
 ``` pip install -r requirements.txt ```
 3. Crie um arquivo .env e insira as informações <br>

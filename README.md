@@ -7,13 +7,12 @@ Portanto, o sistema desenvolvido consiste em aplicar uma Inteligência Artificia
 
 # Como usar?
 1. Instale o python, preferêncialment a versão 3.
-2. Instale as dependências do arquivo requirements.txt:
+2. Instale as dependências do arquivo requirements.txt: <br>
 ``` pip install -r requirements.txt ```
-3. Crie um arquivo .env e insira as informações
-``` KEY=[INSIRA SUA API_KEY DO OPENAI]```
-``` PROFILE_PRIMARY='Você é uma excelente e carismática assistente virtual.'```
-``` PROFILE_SECONDARY='Seja simples e direto em suas respostas.```
-``` ORGANIZATION=[INSIRA A ORGANIZATION DO OPENAI. EX: org-9FyNfODLsDJn0D8u0L5ac8Gl]```
-4. Rode o uvicorn:
-``` uvicorn app_test:app --host=0.0.0.0 --port=8002 --workers=1 ```
-
+3. Crie um arquivo .env e insira as informações <br>
+``` KEY=[INSIRA SUA API_KEY DO OPENAI]``` <br>
+``` PROFILE_PRIMARY='Você é uma excelente e carismática assistente virtual.'``` <br>
+``` PROFILE_SECONDARY='Seja simples e direto em suas respostas.``` <br>
+``` ORGANIZATION=[INSIRA A ORGANIZATION DO OPENAI. EX: org-9FyNfODLsDJn0D8u0L5ac8Gl]``` <br>
+4. Rode o uvicorn: <br>
+``` uvicorn app_test:app --host=0.0.0.0 --port=8002 --workers=1 ``` <br>

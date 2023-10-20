@@ -2,6 +2,7 @@ import openai
 from fastapi import FastAPI
 from dotenv import dotenv_values
 from utils import Payload
+import requests
 
 app = FastAPI()
 
@@ -13,6 +14,7 @@ ai_profile_secondary = ENV['PROFILE_SECONDARY']
 openai.organization = ENV['ORGANIZATION']
 
 user_input = "";
+data = "";
 
 def openai_chat(profile:str, user_prompt:str, data = ""):
     if profile == "primary":
@@ -55,21 +57,28 @@ async def userInput(payload: Payload):
         return {"message": "Usuário não perguntou."}
     global user_input
     user_input = payload.user_input
-    return {"message": "Pergunta armazenada com sucesso."}
+    print('User enviou uma pergunta')
+    
+    keys = getKeysInUserInput()
+    print(keys)
+    request = requests.get("http://localhost:3000", json={"keys":keys})
+    print('Webscrapp retornou.')
+    print(request.text)
 
-
-@app.post("/getAiResponseToUser")
-async def getAiResponseToUser(data):
-    global user_input
-    response = openai_chat(profile="primary", user_prompt=user_input, data=data)
+    response = getAiResponseToUser(request.text)
     return {"message": response}
 
-@app.get("/getKeysInUserInput")
-async def getKeysInUserInput():
+def getAiResponseToUser(data):
+    global user_input
+    response = openai_chat(profile="primary", user_prompt=user_input, data=data)
+    return response
+
+def getKeysInUserInput():
     global user_input
     if user_input == "":
-        return {"message": "Usuário não requisitou"}
+        return "Usuário não requisitou"
     else:
         response = openai_chat(profile="secondary", user_prompt=user_input)
-        return {"message": response}
+        return response
     
+

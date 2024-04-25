@@ -1,18 +1,22 @@
-# HACK_INOVA-UNI_CheckBot
+## HACK_INOVA-UNI_CheckBot
 
 Projeto desenvolvido para o evento <a href="https://www.unitins.br/Concursos/Publico/Home/S/4fb1f276c82f5faa8ed3e5c4ac2c6893" alt="Link to event" target="_blank">2ª EDIÇÃO DO HACKATHON INOVAUNI – E-GOV</a>
 
-O Tema deste projeto é: "Sistema mais simples/compreensível de transparência".
-Portanto, o sistema desenvolvido consiste em aplicar uma Inteligência Artificial para simplificar a busca por dados no Portal de Transparência do Estado do Tocantins (Expansível para os municípios).
+Este repositório contém apenas o código-fonte do algoritmo de IA, responsável pela integração do ChatGPT e comunicação entre o WebScrap e o front-end.
 
-# Como usar?
-1. Instale o python, preferencialmente a versão 3.
-2. Instale as dependências do arquivo requirements.txt: <br>
-``` pip install -r requirements.txt ```
-3. Crie um arquivo .env e insira as informações <br>
-``` KEY=[INSIRA SUA API_KEY DO OPENAI]``` <br>
-``` PROFILE_PRIMARY='Você é uma excelente e carismática assistente virtual.'``` <br>
-``` PROFILE_SECONDARY='Seja simples e direto em suas respostas.``` <br>
-``` ORGANIZATION=[INSIRA A ORGANIZATION DO OPENAI. EX: org-9FyNfODLsDJn0D8u0L5ac8Gl]``` <br>
-4. Rode o uvicorn: <br>
-``` uvicorn app:app --host=0.0.0.0 --port=8002 --workers=1 ``` <br>
+### Tema e Objetivo:
+
+O hackathon nos desafiou a desenvolver um "Sistema mais simples/compreensível de transparência". Para atender a essa necessidade, propomos a implementação de inteligência artificial (IA) para simplificar o sistema de busca por informações no Portal de Transparência do Estado do Tocantins.
+
+### Descrição da Solução:
+
+Nossa solução consiste em um algoritmo de IA que integra o ChatGPT, uma plataforma de processamento de linguagem natural avançada, com o [WebScrap](https://github.com/Davi-zzz/hackathon), uma ferramenta de extração de dados da web. Essa integração permite que o sistema compreenda e responda a consultas em linguagem natural dos usuários, facilitando a busca por informações no portal.
+
+### Vantagens do ChatGPT:
+
+* **Processamento de linguagem natural avançado:** O ChatGPT possui um modelo de linguagem robusto que permite a compreensão precisa das consultas dos usuários, mesmo que sejam complexas ou mal formuladas.
+
+* **Capacidade de gerar respostas personalizadas:** O ChatGPT pode gerar respostas personalizadas para cada consulta, fornecendo informações relevantes e contextualizadas para o usuário.
+
+* **Interação natural e intuitiva:** O uso do ChatGPT permite que os usuários interajam com o sistema de forma natural e intuitiva, como se estivessem conversando com uma pessoa real.
+Repositório:

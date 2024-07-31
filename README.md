@@ -1,6 +1,6 @@
 ## HACK_INOVA-UNI_CheckBot
 
-Projeto desenvolvido para o evento <a href="https://www.unitins.br/Concursos/Publico/Home/S/4fb1f276c82f5faa8ed3e5c4ac2c6893" alt="Link to event" target="_blank">2ª EDIÇÃO DO HACKATHON INOVAUNI – E-GOV</a>
+Projeto desenvolvido para o evento <a href="https://www.unitins.br/nPortal/portal/noticias/detalhes/5582-2023-10-21-com-cerca-de-200-inscritos-circuito-de-inovacao-surpreende-em-sua-primeira-edicao" alt="Link to event" target="_blank">2ª EDIÇÃO DO HACKATHON INOVAUNI – E-GOV</a>
 
 Este repositório contém apenas o código-fonte do algoritmo de IA, responsável pela integração do ChatGPT e comunicação entre o WebScrap e o front-end.
 
